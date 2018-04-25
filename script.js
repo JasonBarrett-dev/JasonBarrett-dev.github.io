@@ -10,7 +10,7 @@ function replaceCode(code) {
 
   let readReg = /\b(read)/g,
       outputReg = /\b(output|sort)/g,
-      eqReg = /\b(eq)/g,
+      eqReg = /\b(eq|notEq)/g,
       conjReg = /\b(\s\^)/g,
       commentReg = /(\/\/.*)/g,
       equalsReg = /\b(\s\=)/g,

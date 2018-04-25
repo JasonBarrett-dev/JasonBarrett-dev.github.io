@@ -13,7 +13,7 @@ function replaceCode(code) {
       eqReg = /\b(eq|notEq)/g,
       conjReg = /\b(\s\^)/g,
       commentReg = /(\/\/.*)/g,
-      equalsReg = /\b(\s\=)/g,
+      equalsReg = /\b(\s\<=|\s\>=|\s\=|\s\<|\s\>|\s\!=)/g,
       numReg = /\b([0-9]+)/g;
 
   let htmlTagReg = /(&lt;[^\&]*&gt;)/g

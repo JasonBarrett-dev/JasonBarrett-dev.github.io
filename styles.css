@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-size: 12pt;
+}
+
+#page-header {
+  background-color: rgb(255, 184, 0);
+  padding: 10px 10px 10px 10px;
+  margin-left: 0px;
+  width: 100%;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 36pt;
+}
+
+pre {
+  text-align: left;
+}
+
+textarea {
+  resize: both;
+  overflow: auto;
+  border-style: dashed;
+  font-size: 12pt;
+  outline-color: rgb(255, 184, 0);
+}
+
+#highlighter {
+  display: inline-block;
+  text-align: center;
+  padding-top: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0%);
+}
+
+.read {
+  color: red;
+}
+
+.output {
+  color: blue;
+}
+
+.eq {
+  color: rgb(14, 126, 0);
+}
+
+.conj {
+  color: rgb(255, 92, 0);
+}
+
+.comment {
+  color: grey;
+}
+
+.equals {
+  color: rgb(108, 176, 255);
+}
+
+.num {
+  color: rgb(212, 0, 133);
+}

@@ -65,3 +65,11 @@ textarea {
 .num {
   color: rgb(212, 0, 133);
 }
+
+:focus {
+  outline: none;
+}
+
+a {
+  outline: thin dotted black;
+}

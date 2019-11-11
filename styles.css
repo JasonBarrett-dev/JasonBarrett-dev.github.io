@@ -73,3 +73,27 @@ textarea {
 a {
   outline: thin dotted black;
 }
+
+.badContrast { 
+  color: #BFBFBF;
+}
+
+.goodContrast {
+  color: #919191;
+}
+
+.white {
+  color: white;
+}
+
+.glyphicon {
+  color: black;
+}
+
+#search-icon {
+  color: #B5B5B5;
+}
+
+#print-icon {
+  color: #878787;
+}

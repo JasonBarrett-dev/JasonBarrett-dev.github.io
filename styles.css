@@ -102,3 +102,8 @@ a {
 #github2 {
   fill: #B5B5B5;
 }
+
+img {
+  width: 100%;
+  height: auto;
+}

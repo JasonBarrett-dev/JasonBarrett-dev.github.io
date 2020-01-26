@@ -67,15 +67,24 @@ textarea {
   color: rgb(212, 0, 133);
 }
 
-:focus {
-  outline: none;
+#input1:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+#input2:focus {
+  outline: 2px solid blue !important;
+}
+
+#input3:focus {
+  outline: 2px solid gray !important;
 }
 
 a {
   outline: thin dotted black;
 }
 
-.badContrast { 
+.badContrast {
   color: #BFBFBF;
 }
 

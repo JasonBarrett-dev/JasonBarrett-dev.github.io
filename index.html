@@ -4,49 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Qaret Syntax Highlighter</title>
+  <title>Jason Barrett</title>
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet"></link>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="script.js"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+  <link href="main.css" rel="stylesheet"></link>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">  <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="scripts/index.js"></script>
 </head>
 <body>
-<div id="page-header">
-  <h1>Accessibility Checker Test Website</h1>
-</div>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <!-- Display name in navbar -->
+    <a class="navbar-brand" href="#">JASON BARRETT</a>
 
-<div id="highlighter">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-<form>
-Name:<input id="input1" type="text" name="name">
-</form>
+    <!-- Buttons to move to sections of page; collapse into burger menu on smaller screens-->
+    <div id="navbar-buttons" class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about-me">ABOUT ME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience">EXPERIENCE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#education">EDUCATION</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#other">OTHER</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-<form>
-  Name:<input id="input2" type="text" name="name">
-</form>
+  <div id="intro" class="section alternate1">
+    Picture of myself and introduction as Graduate Software Developer
+  </div>
 
-<form>
-  Name:<input id="input3" type="text" name="name">
-</form>
+  <div id="about-me" class="section alternate2">
+    <h2>ABOUT ME</h2>
+    <hr/>
+    Paragraph about myself & my interests...
+  </div>
 
+  <div id="experience" class="section alternate1">
+    <h2>EXPERIENCE</h2>
+    <hr/>
+    Internships and events...
+  </div>
 
-<a href="https://www.google.com">Google</a>
+  <div id="education" class="section alternate2">
+    <h2>EDUCATION</h2>
+    <hr/>
+    University (incl. grade & interesting projects), A-levels...
+  </div>
 
-<p>Max contrast: <span class="glyphicon glyphicon-envelope" id="envelope-icon"></span></p>
-<p>Contrast sufficient: <span class="glyphicon glyphicon-print" id="print-icon"></span></p>
-<p>Contrast too low: <span class="glyphicon glyphicon-search" id="search-icon"></span></p>
+  <!-- Hobbies, cycling, etc. ? Link Strava? -->
+  <div id="other" class="section alternate1">
+    <h2>OTHER</h2>
+    <hr/>
+    A bit about my hobbies...
+  </div>
 
-<svg id="github1" class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
-<svg id="github2" class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
-
-<p>TEXT</p>
-<p style="color: #B5B5B5">MORE TEXT</p>
-
-<img src="Cat_poster_1.jpg" alt="cat poster" />
-<img src="dog.jpg" alt="cat poster" />
-</div>
-
+  <div id="contact" class="section alternate2">
+    <h2>CONTACT ME</h2>
+    <hr/>
+    Form here
+  </div>
 </body>
 </html>

@@ -1,0 +1,50 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body a {
+    font-style: Arial !important;
+}
+
+nav {
+    background-color: #244264;
+}
+
+nav a {
+    font-size: 1.5em !important;
+}
+
+#navbar-buttons {
+    text-align: right;
+}
+
+.section {
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 0em;
+    padding-bottom: 45px;
+    min-height: 50vh;
+}
+
+.section:before {
+    height: 70px;
+    content: "";
+    display:block;
+}
+
+.section h2 {
+    text-align: center;
+}
+
+.section hr {
+    background: rgb(180, 180, 180);
+    height: 1px;
+}
+
+.alternate1 {
+    background-color: rgb(235, 235, 235);
+}
+
+.alternate2 {
+    background-color: white;
+}

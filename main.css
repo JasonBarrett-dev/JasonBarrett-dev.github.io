@@ -18,6 +18,19 @@ nav a {
     text-align: right;
 }
 
+#profile {
+    text-align: center;
+}
+
+#profile-img {
+    height: 30vh;
+    border-radius: 50%;
+    border-color: white;
+    border-width: 0.4em;
+    border-style: solid;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+}
+
 .section {
     padding-left: 5em;
     padding-right: 5em;
@@ -48,3 +61,4 @@ nav a {
 .alternate2 {
     background-color: white;
 }
+

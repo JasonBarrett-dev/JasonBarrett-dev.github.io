@@ -1,4 +1,1 @@
-
-<div class="page-container">
-    Projects
-</div>
+<p>Projects</p>

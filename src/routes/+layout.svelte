@@ -55,14 +55,17 @@ onNavigate((navigation) => {
     }
 
     nav ul {
-        margin-top: 0;
+        margin: 0;
     }
 
     nav li {
         list-style-type: none;
         margin: 0;
-        padding: 0 10px;
         display: inline;
+    }
+
+    nav a {
+        padding: 10px
     }
 
     li {

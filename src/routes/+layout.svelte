@@ -1,4 +1,5 @@
 <script lang="ts">
+import Navbar from '$lib/Navbar.svelte';
 import { onNavigate } from '$app/navigation';
 
 onNavigate((navigation) => {
@@ -14,15 +15,8 @@ onNavigate((navigation) => {
 });
 </script>
 
-<nav>
-    <div class="max-page-width">
-        <a href="/">JB</a>
-        <ul class="nav-right">
-            <li><a href="/about">About</a></li>
-            <li><a href="/projects">Projects</a></li>
-        </ul>
-    </div>
-</nav>
+<Navbar></Navbar>
+
 
 <div class="max-page-width">
     <slot></slot>
@@ -33,58 +27,6 @@ onNavigate((navigation) => {
 </div>
 
 <style>
-    nav {
-        width: 100%;
-        top: 0;
-        margin: 0;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        font-size: 20px;
-        position: sticky;
-        /* backdrop-filter: blur(0.8); */
-        /* background-color: rgb(15, 23, 42, 0.5); */
-        display: flex;
-        align-items: center;
-        view-transition-name: header;
-    }
-
-    .nav-right {
-        display: flex;
-        margin-right: auto;
-        float: right;
-    }
-
-    nav ul {
-        margin: 0;
-    }
-
-    nav li {
-        list-style-type: none;
-        margin: 0;
-        display: inline;
-    }
-
-    nav a {
-        padding: 10px
-    }
-
-    li {
-        display: inline;
-    }
-
-    .max-page-width {
-        max-width: 900px;
-        width: 100%;
-        margin: auto;
-        align-items: center;
-        justify-content: center;
-    }
-
-    nav a {
-        color: inherit;
-        text-decoration: none;
-    }
-
     footer {
         position: absolute;
         height: 2.5em;

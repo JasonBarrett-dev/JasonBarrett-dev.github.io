@@ -9,7 +9,7 @@ const config = {
 
     kit: {
         adapter: adapter({
-            // TODO fallback: 'index.html'
+            fallback: 'app.html'
         }),
         paths: {
             // For Github Pages we need to serve the website from a folder with the same name as the repository.

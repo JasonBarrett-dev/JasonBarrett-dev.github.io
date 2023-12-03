@@ -26,6 +26,10 @@ onNavigate((navigation) => {
 
 <div class="max-page-width">
     <slot></slot>
+
+    <footer>
+        Website made by me using&nbsp;<a href="https://kit.svelte.dev">SvelteKit</a>
+    </footer>
 </div>
 
 <style>
@@ -73,9 +77,21 @@ onNavigate((navigation) => {
         justify-content: center;
     }
 
-    a, a:link, a:visited, a:hover, a:active {
+    nav a {
         color: inherit;
         text-decoration: none;
+    }
+
+    footer {
+        position: absolute;
+        height: 2.5em;
+        text-align: center;
+        bottom: 0;
+        view-transition-name: footer;
+    }
+
+    footer > a {
+        color: var(--link-color);
     }
 
     /* View transitions */

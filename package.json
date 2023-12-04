@@ -1,5 +1,5 @@
 {
-	"name": "jasonbarrett1998.github.io",
+	"name": "jasonbarrett-dev.github.io",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
@@ -32,5 +32,8 @@
 		"vite": "^4.4.2",
 		"vitest": "^0.32.2"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"iconify-icon": "^1.0.8"
+	}
 }

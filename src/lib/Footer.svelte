@@ -1,6 +1,17 @@
-
+<script>
+    import 'iconify-icon';
+</script>
 <footer>
-    Website made by me using&nbsp;<a href="https://kit.svelte.dev">SvelteKit</a>
+    <div class="footer-row-1">
+        Website made by me using&nbsp;<a href="https://kit.svelte.dev">SvelteKit</a>
+    </div>
+
+    <div class="footer-row-2">
+        <iconify-icon icon="mdi:github"></iconify-icon>
+        <iconify-icon icon="mdi:linkedin"></iconify-icon>
+    </div>
+
+    <!-- TODO add Github & LinkedIn icons & links here -->
 </footer>
 
 <style>

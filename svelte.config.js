@@ -12,8 +12,7 @@ const config = {
             fallback: 'app.html'
         }),
         paths: {
-            // For Github Pages we need to serve the website from a folder with the same name as the repository.
-            base: dev ? '' : process.env.BASE_PATH
+			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
         }
     }
 };

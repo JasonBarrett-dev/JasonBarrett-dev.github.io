@@ -1,43 +1,31 @@
 <script lang="ts">
-import Navbar from '$lib/Navbar.svelte';
-import { onNavigate } from '$app/navigation';
+    import Navbar from '$lib/Navbar.svelte';
+	import Footer from '$lib/Footer.svelte';
+    import { onNavigate } from '$app/navigation';
 
-onNavigate((navigation) => {
-    if (!document.startViewTransition) return;
+    onNavigate((navigation) => {
+        if (!document.startViewTransition) return;
 
 
-    return new Promise((resolve) => {
-        document.startViewTransition(async () => {
-            resolve();
-            await navigation.complete;
+        return new Promise((resolve) => {
+            document.startViewTransition(async () => {
+                resolve();
+                await navigation.complete;
+            });
         });
     });
-});
 </script>
 
-<Navbar></Navbar>
 
+<Navbar></Navbar>
 
 <div class="max-page-width">
     <slot></slot>
 
-    <footer>
-        Website made by me using&nbsp;<a href="https://kit.svelte.dev">SvelteKit</a>
-    </footer>
+    <Footer></Footer>
 </div>
 
 <style>
-    footer {
-        position: absolute;
-        height: 2.5em;
-        text-align: center;
-        bottom: 0;
-        view-transition-name: footer;
-    }
-
-    footer > a {
-        color: var(--link-color);
-    }
 
     /* View transitions */
     @keyframes fade-in {

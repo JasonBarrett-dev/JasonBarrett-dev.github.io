@@ -1,4 +1,4 @@
-# jasonbarrett-dev.github.io
+# [jasonbarrett-dev.github.io](jasonbarrett-dev.github.io)
 
 My personal website. Mostly just wanted to mess around with SvelteKit to see what the fuss is all about and
 practise front-end / design work.

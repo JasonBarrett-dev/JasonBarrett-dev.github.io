@@ -17,8 +17,6 @@
         padding-bottom: 20px;
         font-size: 20px;
         position: sticky;
-        /* backdrop-filter: blur(0.8); */
-        /* background-color: rgb(15, 23, 42, 0.5); */
         display: flex;
         align-items: center;
         background: transparent;

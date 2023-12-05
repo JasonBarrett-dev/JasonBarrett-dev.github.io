@@ -4,10 +4,18 @@
 
 </script>
 
-<p>About me</p>
+<p>
+    Diligent and conscientious software engineer with over 4 years experience working
+    in global teams. Enthusiastic about writing maintainable and testable code to ensure
+    high quality. Strong academic record with a 1st class degree in Computer Science,
+    completing multiple internships during my time at university. In my spare time I
+    run competitively with my local club and also enjoy cycling.
+</p>
 
 <JobCard
     startDate={new Date(2020, 9)} endDate={new Date(2023, 3)}
+    company="Amazon"
+    title="Software Development Engineer"
     technologies={["Java", "Python", "JavaScript", "AWS", "Ruby", "SQL"]}>
     <ul>
         <li>

@@ -1,6 +1,5 @@
 <script lang="ts">
     import Navbar from '$lib/Navbar.svelte';
-	import Footer from '$lib/Footer.svelte';
     import { onNavigate } from '$app/navigation';
 
     onNavigate((navigation) => {
@@ -21,8 +20,6 @@
 
 <div class="max-page-width">
     <slot></slot>
-
-    <Footer></Footer>
 </div>
 
 <style>

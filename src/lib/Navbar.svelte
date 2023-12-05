@@ -21,6 +21,8 @@
         /* background-color: rgb(15, 23, 42, 0.5); */
         display: flex;
         align-items: center;
+        background: transparent;
+        backdrop-filter: blur(10px);
         view-transition-name: header;
     }
 

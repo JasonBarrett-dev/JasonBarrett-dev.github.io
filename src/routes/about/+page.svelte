@@ -1,9 +1,26 @@
 <script>
-	import StravaProfile from "$lib/StravaProfile.svelte";
+    import JobCard from "$lib/JobCard.svelte";
+    import StravaProfile from "$lib/StravaProfile.svelte";
 
 </script>
 
 <p>About me</p>
+
+<JobCard
+    startDate={new Date(2020, 9)} endDate={new Date(2023, 3)}
+    technologies={["Java", "Python", "JavaScript", "AWS", "Ruby", "SQL"]}>
+    <ul>
+        <li>
+            Developing and maintaining high-scale services for orchestrating question-answering in Alexa. Primarily
+            using Java for EC2 & Fargate services.
+        </li>
+        <li>
+            Independently expanded coverage of a low-latency question-answering system (using OpenFST & Java) for
+    answering spelling and calculation questions, reducing overall Alexa latency significantly across multiple
+    locales.
+        </li>
+    </ul>
+</JobCard>
 
 <!--
     TODO add timeline of jobs / things here. Make a timeline element component and combine them.

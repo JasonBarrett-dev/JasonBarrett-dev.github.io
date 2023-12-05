@@ -13,7 +13,6 @@
     nav {
         width: 100%;
         top: 0;
-        margin: 0;
         padding-top: 20px;
         padding-bottom: 20px;
         font-size: 20px;

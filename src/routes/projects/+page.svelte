@@ -1,1 +1,1 @@
-<p>Projects</p>
+<p>Coming soon...</p>

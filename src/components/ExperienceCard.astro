@@ -1,0 +1,47 @@
+---
+interface Props {
+    startDate: Date;
+    endDate?: Date;
+    institution: string;
+    title: string;
+}
+
+const { startDate, endDate, institution, title } = Astro.props;
+
+const LOCALE: string = 'en-gb';
+let formattedStartDate: string = startDate.toLocaleDateString(LOCALE, { year: "numeric", month: "short"});
+let formattedEndDate: string;
+if (endDate) {
+    formattedEndDate = endDate.toLocaleDateString(LOCALE, { year: "numeric", month: "short"});
+} else {
+    formattedEndDate = "Present";
+}
+---
+
+<div class="job-card">
+    <slot name="logo-slot" />
+    <p class="card-date">{formattedStartDate} - {formattedEndDate}</p>
+    <div class="card-content">
+        <p class="card-institution"><b>{institution}</b></p>
+        <p class="card-title"><i>{title}</i></p>
+        <slot />
+    </div>
+</div>
+
+
+<style>
+    .job-card {
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .technology-list {
+        display: flex;
+    }
+
+    .technology-list > li {
+        margin: 10px;
+    }
+
+</style>

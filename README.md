@@ -1,25 +1,40 @@
-# [jasonbarrett-dev.github.io](https://jasonbarrett-dev.github.io)
+# My personal site, made using Astro
 
-My personal website. Mostly just wanted to mess around with SvelteKit to see what the fuss is all about and
-practise front-end / design work.
+Just a basic site so I can link to other projects from here eventually (when I get round to working on those...)
 
-## Developing
+## 🚀 Project Structure
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Inside of your Astro project, you'll see the following folders and files:
 
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+```text
+/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── components/
+│   │   └── Card.astro
+│   ├── layouts/
+│   │   └── Layout.astro
+│   └── pages/
+│       └── index.astro
+└── package.json
 ```
 
-## Building
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-To create a production version of your app:
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-```bash
-npm run build
-```
+Any static assets, like images, can be placed in the `public/` directory.
 
-You can preview the production build with `npm run preview`.
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |

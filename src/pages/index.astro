@@ -1,33 +1,49 @@
 ---
+import { Image } from 'astro:assets';
+import CatDeskPhoto from '../images/index/cat_desk.png';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Jason Barrett | Software Developer">
-	<div class="homepage">
-		<div class="center-vertical">
-			<h1 id="name" class="title-page">Jason Barrett</h1>
-			<h2 id="role" class="title-page">Software Engineer</h2>
-		</div>
+    <div class="homepage">
+        <div class="center-vertical">
+            <Image class="homepage-image" src={CatDeskPhoto} alt="An illustration of a man sitting at a desk with a cat and a drink"/>
+            <h1 id="name" class="title-page">Jason Barrett</h1>
+            <h2 id="role" class="title-page">Software Engineer</h2>
+        </div>
 
-	</div>
+    </div>
 </Layout>
 
 <style>
-	.homepage {
-	    display: flex;
-	    flex-direction: column;
-	}
+    .homepage {
+        display: flex;
+        flex-direction: column;
+    }
 
-	.center-vertical {
-	    margin-top: 20vh;
-	    align-content: center;
-	}
+    .center-vertical {
+        align-content: center;
+        color: var(--highlight-color);
+        transition: color 2s;
+    }
 
-	#name {
-	    font-size: 10vh;
-	}
+    #name {
+        font-size: 7vw;
+    }
 
-	.title-page {
-	    text-align: center;
-	}
+    #role {
+        font-size: 3.2vw;
+    }
+
+    .title-page {
+        text-align: center;
+    }
+
+    .homepage-image {
+        max-width: 50%;
+        width: auto;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
 </style>

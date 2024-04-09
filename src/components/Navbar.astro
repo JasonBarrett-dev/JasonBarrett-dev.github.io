@@ -1,5 +1,26 @@
+<script>
+    const navLinks = document.querySelectorAll("nav a");
+
+    navLinks.forEach((link) => {
+        link.classList.remove("active");
+
+        // `slice` here to remove the first `/` in pathname
+        const currentPath = window.location.pathname.slice(1);
+
+        // `link.href` returns a whole url, such as: "https://somedomain.com/posts" and we only need the last part
+        const hrefArray = link.href.split("/");
+        const thisPath = hrefArray[hrefArray.length - 1];
+
+        console.log(`Current path ${currentPath}`)
+        console.log(`this path ${thisPath}`)
+        if (currentPath === thisPath) {
+           link.classList.add("active");
+        }
+    });
+</script>
+
 <nav>
-    <div class="max-page-width">
+    <div>
         <a href="/">JB</a>
         <ul class="nav-right">
             <li><a href="/about">About</a></li>
@@ -10,10 +31,8 @@
 
 <style>
     nav {
-        width: 100%;
         top: 0;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        margin: 15px 10px;
         font-size: 20px;
         position: sticky;
         display: flex;
@@ -23,32 +42,63 @@
         view-transition-name: header;
     }
 
+    nav > div {
+        width: 100%;
+        margin: 5px;
+        align-items: center;
+        justify-content: center;
+    }
+
     .nav-right {
         display: flex;
         margin-right: auto;
         float: right;
     }
 
-    nav ul {
+    ul {
         margin: 0;
     }
 
-    nav li {
+    li {
         list-style-type: none;
         margin: 0;
         display: inline;
     }
 
-    nav a {
-        padding: 10px
-    }
-
-    li {
-        display: inline;
-    }
-
-    nav a {
+    a {
+        margin: 10px;
         color: inherit;
         text-decoration: none;
+        transition: color 300ms ease;
+
+        /* Underline styles */
+        position: relative;
+        padding: 0.2em 0;
+    }
+
+    a.active,
+    a:hover {
+        color: var(--highlight-color);
+        transition: color 300ms ease;
+    }
+
+    /* Fade in */
+    a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0.1em;
+        background-color: var(--highlight-color);
+        opacity: 0;
+        transition: opacity 300ms, transform 300ms;
+    }
+
+    a.active::after,
+    a:hover::after,
+    a:focus::after {
+        opacity: 1;
+        transform: translate3d(0, 0.2em, 0);
     }
 </style>

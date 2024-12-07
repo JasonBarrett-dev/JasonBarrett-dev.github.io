@@ -6,4 +6,5 @@ dateEnd: "09/01/2018"
 ---
 
 - Built features on a customer-facing website which automatically converts pages into client presentations.
-- Technologies used: Python/Django, Bash, JavaScript, XSLT.
+
+Technologies used: Python/Django, Bash, JavaScript, XSLT.

@@ -13,5 +13,6 @@ locales.
 time employee), mentoring undergraduate students exploring careers in tech and onboarding new starters.
 - Communicating on a daily basis with adjacent teams and colleagues in both tech and non-tech based roles
 to successfully collaborate on projects. Led weekly office hours to advise adjacent teams.
-- Technologies used: Java, Python, AWS (SageMaker, Fargate, EC2, S3, KMS, AppConfig, CloudFormation, CDK,
+
+Technologies used: Java, Python, AWS (SageMaker, Fargate, EC2, S3, KMS, AppConfig, CloudFormation, CDK,
 Lambda, CloudWatch), Ruby, SQL.

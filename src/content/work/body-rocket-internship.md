@@ -6,4 +6,5 @@ dateEnd: "09/01/2017"
 ---
 
 - Applied validated physics-based algorithms to analyse the aerodynamic efficiency of cyclists.
-- Technologies used: C#, C++, Qt.
+
+Technologies used: C#, C++, Qt.

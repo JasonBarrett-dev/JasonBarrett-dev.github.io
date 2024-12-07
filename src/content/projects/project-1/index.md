@@ -6,4 +6,4 @@ date: "Dec 07 2024"
 
 # ... Maybe
 
-If I ever get around to it, I'll write something here.
+I might work on a project outside of work at some point...
